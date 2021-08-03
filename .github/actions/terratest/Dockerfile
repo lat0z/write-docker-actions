@@ -4,8 +4,5 @@ RUN wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_am
     rm terraform*.zip; \
     mv terraform /usr/bin; \
     apk add gcc musl-dev
-#WORKDIR /go/src
-#COPY . .
-RUN pwd
-RUN ls -lha
-CMD ["./entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+CMD ["/entrypoint.sh"]
