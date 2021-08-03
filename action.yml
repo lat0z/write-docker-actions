@@ -1,0 +1,9 @@
+name: "101 action"
+
+description: "First action running "
+output: 
+    prueba:
+      description: "all done "
+runs:
+  using: "docker"
+  image: "Dockerfile"
