@@ -8,5 +8,5 @@ RUN wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_am
 #COPY . .
 RUN pwd
 RUN ls -lha
-RUN go get -d -v ./...
+#RUN go get -d -v ./...
 CMD ["./entrypoint.sh"]
