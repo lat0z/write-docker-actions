@@ -1,3 +1,4 @@
 #!/bin/ash
 terraform -version
-go test -v ./terratest
+ls -lha
+#go test -v ./terratest
