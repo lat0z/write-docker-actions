@@ -6,5 +6,7 @@ RUN wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_am
     apk add gcc musl-dev
 #WORKDIR /go/src
 #COPY . .
-#RUN go get -d -v ./...
+RUN pwd
+RUN ls -lha
+RUN go get -d -v ./...
 CMD ["./entrypoint.sh"]
