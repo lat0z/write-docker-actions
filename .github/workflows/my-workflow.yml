@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Docker Actions
+name: Docker Action to test terraform deployment
 
 on:
   push:
@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: hello-action
-        uses: ./
+      - name: terratest
+        uses: ./.github/actions/terratest
 
