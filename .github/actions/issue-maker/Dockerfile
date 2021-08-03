@@ -3,4 +3,5 @@ RUN wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_am
 unzip terraform_1.0.3_linux_amd64.zip; \
 rm terraform*.zip; \
 mv terraform /usr/bin
-
+COPY . /
+ENTRYPOINT['/entrypoint.sh']
