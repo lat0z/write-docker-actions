@@ -1,4 +1,3 @@
 #!/bin/ash
-terraform -version  
-pwd
-ls
+terraform -version
+go test -v ./terratest
